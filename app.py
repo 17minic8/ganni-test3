@@ -102,7 +102,7 @@ def processRequest(req):
                           "\n" + " Last updated : " + str(
             fulfillmentText.get('last_update')) + "\n\n*******END********* \n "
         print(webhookresponse)
-        log.saveConversations(sessionID, "Cases worldwide", webhookresponse, intent, db)
+        #log.saveConversations(sessionID, "Cases worldwide", webhookresponse, intent, db)
         #log.saveCases("world", fulfillmentText, db)
 
         return {
@@ -178,7 +178,7 @@ def processRequest(req):
 
 
 
-        log.saveConversations(sessionID, "Indian State Cases", webhookresponse1, intent, db)
+        #log.saveConversations(sessionID, "Indian State Cases", webhookresponse1, intent, db)
         return {
 
             "fulfillmentMessages": [
